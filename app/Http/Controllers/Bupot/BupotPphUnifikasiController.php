@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Response;
 use Yajra\DataTables\DataTables;
 
-class BupotPph21FinalController extends Controller
+class BupotPPhUnifikasiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,7 +36,7 @@ class BupotPph21FinalController extends Controller
             return DataTables::of($bupotPph21)
                 ->addColumn('action', function ($item) {
                     return '
-                    <a class="btn btn-sm btn-success rounded-circle" title="Download Bukti Potong" onclick="return !window.open(this.href, &#039;Bukti Potong&#039;, &#039;width=1024,height=768&#039;)" href="' . route('bupot-pph21-final.download', $item->id) . '"><i class="fa fa-download"></i></a>
+                    <a class="btn btn-sm btn-success rounded-circle" title="Download Bukti Potong" onclick="return !window.open(this.href, &#039;Bukti Potong&#039;, &#039;width=1024,height=768&#039;)" href="' . route('bupot-pph-unifikasi.download', $item->id) . '"><i class="fa fa-download"></i></a>
                     <a class="btn btn-sm btn-warning rounded-circle text-white" title="Kirim Bukti Potong Melalui Email" href="mailto:harijumadi@gmail.com"><i class="fa fa-paper-plane"></i></a>
                     ';
                 })
@@ -54,7 +54,7 @@ class BupotPph21FinalController extends Controller
                 ->make(true);
         }
 
-        return view('pages.bupot.bupot-pph21-final.index');
+        return view('pages.bupot.bupot-pph-unifikasi.index');
     }
 
     /**
@@ -88,7 +88,7 @@ class BupotPph21FinalController extends Controller
     {
         $item = BupotPph21::findOrFail($bupotPph21);
 
-        return view('pages.bupot.bupot-pph21-final.show', compact('item'));
+        return view('pages.bupot.bupot-pph-unifikasi.show', compact('item'));
     }
 
     /**
@@ -133,7 +133,7 @@ class BupotPph21FinalController extends Controller
      */
     public function download(BupotPph21 $bupotPph21)
     {
-        $directory = '/app/public/bukti-potong/pph21-final/' . $bupotPph21->masa_pajak;
+        $directory = '/app/public/bukti-potong/unifikasi/' . $bupotPph21->masa_pajak;
         $filename = $bupotPph21->no_bukti . '_' . $bupotPph21->identitas_penerima_penghasilan  . '_' . $bupotPph21->id . '.pdf';
         $path = storage_path($directory . DIRECTORY_SEPARATOR . $filename);
 

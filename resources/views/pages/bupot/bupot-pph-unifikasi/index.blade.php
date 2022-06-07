@@ -5,11 +5,11 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="header-primary mb-3">
-                Bupot PPh 21 Final
+                Bupot PPh Unifikasi
             </h1>
-            <p class="subtitle-primary">
+            {{-- <p class="subtitle-primary">
                 Pajak Penghasilan Pasal 21
-            </p>
+            </p> --}}
         </div>
     </div>
     <div class="row basic-form mt-4">
@@ -73,10 +73,9 @@
                                 <th class="text-center">Masa Pajak</th>
                                 <th class="text-center">Tanggal</th>
                                 <th class="text-center">No. Bukti Potong</th>
-                                {{-- <th class="text-center">Keterangan</th> --}}
                                 <th class="text-center">Tarif Pajak</th>
                                 <th class="text-center">Penghasilan Bruto</th>
-                                <th class="text-center">PPh Dipotong</th>
+                                <th class="text-center">Pajak Dipotong</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -150,7 +149,6 @@
                 { data: 'masa_pajak', name: 'masa_pajak', className: 'text-nowrap text-center' },
                 { data: 'tanggal_bukti_potong', name: 'tanggal_bukti_potong', className: 'text-nowrap text-center' },
                 { data: 'no_bukti', name: 'no_bukti', className: 'text-center' },
-                // { data: 'keterangan', name: 'keterangan' },
                 { data: 'tarif_pajak', name: 'tarif_pajak', className: 'text-center' },
                 { data: 'penghasilan_bruto', name: 'penghasilan_bruto', className: 'text-end', render: $.fn.dataTable.render.number('.', ',', 0, '') },
                 { data: 'pph_dipotong', name: 'pph_dipotong', className: 'text-end', render: $.fn.dataTable.render.number('.', ',', 0, '') },

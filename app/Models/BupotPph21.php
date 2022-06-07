@@ -9,6 +9,8 @@ class BupotPph21 extends Model
 
     protected $table = 'bupot_pph21';
 
+    public $incrementing = false;
+
     /**
      * The attributes that are mass assignable.
      *

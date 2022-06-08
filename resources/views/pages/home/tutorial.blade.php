@@ -33,11 +33,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="basic-menus navbar-nav me-auto mb-2 mb-lg-0">
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="/about">
-                            Tentang Kami
-                        </a>
-                    </li> --}}
                     {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -163,118 +158,14 @@
             </div>
         </div>
     </div>
-    <section class="hero-banner-one pt-50 pb-50">
-        <div class="container">
-            <div class="row">
-                <div class="mt-5 col-lg-6 col-12">
-                    <h1 class="header-title">
-                        Selamat Datang di <br class="desktop"> Pojok Pajak </h1>
-                    <p class="my-4 subtitle">
-                        Sistem Informasi Perpajakan di lingkungan Rumah Sakit Jiwa Daerah Atma Husada Mahakam</p>
-                    <p>
-                        <button class="btn btn-primary btn-daftar me-3" href="{{ route('login') }}">
-                            <img class="text-white" height="25" width="25"
-                                src="{{ asset('assets/img/icon_login.svg') }}" /> Akses
-                            Informasi
-                        </button>
-                    </p>
-                </div>
-                <div class="col-lg-6 text-end col-12 d-none d-sm-block mt-md-5 mt-lg-0">
-                    <div class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{ asset('assets/img/hero.png') }}"
-                                    alt="Belajar dari mentor yang berpengalaman di buildwith angga" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="feature-one pt-50">
-        <div class="container-fluid">
-            <div class="mb-4 row">
-                <div class="text-left col-lg-12 col-12">
-                    <div class="front-text-group">
-                        <p class="text-support text-green">Fitur-Fitur Website</p>
-                        <h2 class="header-primary mb-0">Informasi yang Tersedia</h2>
-                        <p class="capt"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-4">
-                <div class="col-lg-3 col-12 col-md-6 whysec">
-                    <div
-                        class="item h-100 d-flex flex-md-column flex-row gap-3 align-items-md-start align-items-center">
-                        <img src="{{ asset('assets/img/rafiki_mobile.svg') }}" class="mb-md-3" height="96">
-                        <div>
-                            <h2 class="title mb-0">
-                                Bukti Potong Elektronik
-                            </h2>
-                            <p class="mt-3 capt mb-0">
-                                Dokumen pemotongan pajak oleh Bendahara
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 col-md-6 whysec">
-                    <div
-                        class="item h-100 d-flex flex-md-column flex-row gap-3 align-items-md-start align-items-center">
-                        <img src="{{ asset('assets/img/rafiki_otp.svg') }}" class="mb-md-3" height="96">
-                        <div>
-                            <h2 class="title mb-0">
-                                Tutorial Pajak
-                            </h2>
-                            <p class="mt-3 capt mb-0">
-                                Kumpulan video terkait perpajakan
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 col-md-6 whysec">
-                    <div
-                        class="item h-100 d-flex flex-md-column flex-row gap-3 align-items-md-start align-items-center">
-                        <img src="{{ asset('assets/img/rafiki_completed.svg') }}" class="mb-md-3" height="96">
-                        <div>
-                            <h2 class="title mb-0">
-                                Daftar Pemotongan
-                            </h2>
-                            <p class="mt-3 capt mb-0">
-                                Data pemotongan pajak oleh Bendahara
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 col-md-6 whysec">
-                    <div
-                        class="item h-100 d-flex flex-md-column flex-row gap-3 align-items-md-start align-items-center">
-                        <img src="{{ asset('assets/img/rafiki_robot.svg') }}" class="mb-md-3" height="96">
-                        <div>
-                            <h2 class="title mb-0">
-                                Pengiriman Email Otomatis
-                            </h2>
-                            <p class="mt-3 capt mb-0">
-                                Pengiriman instan dokumen pajak melalui email secara otomatis
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="top-featured pt-100 pb-50">
         <div class="container-fluid">
             <div class="mb-4 row">
                 <div class="text-left col-lg-10 col-12">
                     <div class="front-text-group">
-                        <p class="text-support text-green">Tutorial Perpajakan</p>
                         <h2 class="header-primary mb-0">Kumpulan Video <br class="desktop"> Tutorial Pajak</h2>
                         <p class="capt"></p>
                     </div>
-                </div>
-                <div class="col-lg-2 col-12 d-sm-block">
-                    <a href="{{ route('tutorial.index') }}" class="mt-4 btn btn-secondary">Lihat Semua</a>
                 </div>
             </div>
             <div class="row gy-4 d-sm-flex">
@@ -357,102 +248,6 @@
             </div>
         </div>
     </section>
-    <section class="top-featured pt-50 pb-50">
-        <div class="container-fluid">
-            <div class="mb-5 row">
-                <div class="text-center col-lg-12 col-12">
-                    <div class="front-text-group">
-                        <p class="text-support text-green">Statistik</p>
-                        <h2 class="header-primary mb-0">Performa Website
-                        </h2>
-                        <p class="capt"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5 row data-stats">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="row gy-5 justify-content-center">
-                        <div class="text-center col-6 col-md-3">
-                            <h3 class="text-green fw-bold">{{ number_format($bupot_count,0,',','.'); }}</h3>
-                            <p>Jumlah Dokumen</p>
-                        </div>
-                        <div class="text-center col-6 col-md-3">
-                            <h3 class="text-green fw-bold">{{ number_format($bupot_count,0,',','.'); }}</h3>
-                            <p>Video Tutorial</p>
-                        </div>
-                        <div class="text-center col-6 col-md-3">
-                            <h3 class="text-green fw-bold">{{ number_format($user_count,0,',','.'); }}</h3>
-                            <p>Jumlah Pengguna</p>
-                        </div>
-                        <div class="text-center col-6 col-md-3">
-                            <h3 class="text-green fw-bold">{{ number_format($bupot_count,0,',','.'); }}</h3>
-                            <p>Email Terkirim Otomatis</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{-- <section class="review-one pt-50 pb-50">
-        <div class="container-fluid">
-            <div class="mb-4 row">
-                <div class="text-left col-lg-10 col-12">
-                    <div class="front-text-group">
-                        <p class="text-support text-green">Apa Kata Mereka?</p>
-                        <h2 class="header-primary mb-0">Testimoni</h2>
-                        <p class="capt"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row pricing testimonials" id="reviews">
-                <div class="col-md-12 col-lg-4 col-12">
-                    <div class="item-pricing d-flex flex-column">
-                        <img src="https://buildwithangga.com/storage/assets/images/tria_member_buildwithangga.png"
-                            class="mb-4 photo">
-                        <h2 class="name">
-                            Fulanah binti Fulan
-                        </h2>
-                        <p class="role">
-                            Web Developer
-                        </p>
-                        <p class="mt-3 review">
-                            Materinya detail dan mudah dipahami.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4 col-12">
-                    <div class="item-pricing d-flex flex-column">
-                        <img src="https://buildwithangga.com/storage/assets/images/reza_saputra_member_buildwithangga.png"
-                            class="mb-4 photo">
-                        <h2 class="name">
-                            Fulan bin Fulan
-                        </h2>
-                        <p class="role">
-                            Web Developer
-                        </p>
-                        <p class="mt-3 review">
-                            Paling recommended pokoknya buat investasi ilmu di era revolusi industri 4.0.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4 col-12">
-                    <div class="item-pricing d-flex flex-column">
-                        <img src="https://buildwithangga.com/storage/assets/images/chaerul_marwan_member_buildwithangga.png"
-                            class="mb-4 photo">
-                        <h2 class="name">
-                            Fulan bin Fulan
-                        </h2>
-                        <p class="role">
-                            Web Developer
-                        </p>
-                        <p class="mt-3 review">
-                            Sangat bermanfaat dan ilmu up-to-date.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
     <section class="footer-nd">
         <div class="container-fluid">
             <div class="row">

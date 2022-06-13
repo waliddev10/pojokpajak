@@ -103,7 +103,7 @@
                         </ul>
                     </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ asset('panduan/pamflet_pojok_pajak_1.pdf') }}">
+                        <a class="nav-link" target="_blank" href="{{ asset('panduan/pamflet_pojok_pajak_2.pdf') }}">
                             Buku Panduan
                             <span class="ms-2 badge bg-primary">New</span>
                         </a>

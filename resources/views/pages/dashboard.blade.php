@@ -9,27 +9,34 @@
             <h1 class="header-primary mb-3">
                 Beranda
             </h1>
-            {{-- <p class="subtitle-primary">
-                Rangkuman informasi perpajakan <br class="desktop"> terbaru saat ini
-            </p> --}}
+            <p class="subtitle-primary">
+                Rangkuman informasi perpajakan terbaru saat ini
+            </p>
         </div>
     </div>
     <div class="row my-3">
-        <div class="tabs-content-nd overflow-hidden">
+        <div class="tabs-content-nd-secondary overflow-hidden">
             <ul class="nav nav-pills mb-5 d-flex flex-wrap gap-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Bukti Potong</button>
+                    <button class="nav-link tab active" id="pills-bupot21-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-bupot21" type="button" role="tab" aria-controls="pills-bupot21"
+                        aria-selected="true">Bukti Potong 21</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link " id="pills-tools-tab" data-bs-toggle="pill" data-bs-target="#pills-tools"
-                        type="button" role="tab" aria-controls="pills-tools" aria-selected="false">Kanal
+                    <button class="nav-link tab" id="pills-bupot-unifikasi-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-bupot-unifikasi" type="button" role="tab"
+                        aria-controls="pills-bupot-unifikasi" aria-selected="true">Bukti Potong Unifikasi</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab" id="pills-tools-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-tools" type="button" role="tab" aria-controls="pills-tools"
+                        aria-selected="false">Kanal
                         Informasi</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fadeshow active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="tab-pane fadeshow active" id="pills-bupot21" role="tabpanel"
+                    aria-labelledby="pills-bupot21-tab">
                     <div class="row mt-5 pricing testimonials mentors" id="reviews">
                         <div class="col-lg-4 col-sm-6 col-12 mb-3">
                             <div class="item-pricing item-mentor position-relative">
@@ -38,20 +45,20 @@
                                         alt="...">
                                 </div>
                                 <h2 class="name mt-4 line-clamp text-capitalize">
-                                    Bupot PPh 21 Final
-                                    <a href="{{ route('bupot-pph21-final.index') }}" class="stretched-link">
+                                    Bukti Potong PPh 21 Bulanan
+                                    <a href="{{ route('bupot-pph21.index') }}" class="stretched-link">
                                     </a>
                                 </h2>
                                 <p class="role mb-0 d-lg-block d-none">
-                                    Pajak Penghasilan
+                                    PPh Pasal 21 Tidak Final
                                 </p>
-                                <div class="item-two-row d-flex align-items-center mt-4">
+                                {{-- <div class="item-two-row d-flex align-items-center mt-4">
                                     <img src="https://class.buildwithangga.com/themes/front/images/ic_check.svg"
                                         class="icon">
                                     <p class="text-medium mb-0">
                                         Selengkapnya
                                     </p>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-12 mb-3">
@@ -61,20 +68,34 @@
                                         alt="...">
                                 </div>
                                 <h2 class="name mt-4 line-clamp text-capitalize">
-                                    Bupot Unifikasi
+                                    Bukti Potong PPh 21 Final
+                                    <a href="{{ route('bupot-pph21-final.index') }}" class="stretched-link">
+                                    </a>
+                                </h2>
+                                <p class="role mb-0 d-lg-block d-none">
+                                    PPh Pasal 21 Final
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fadeshow" id="pills-bupot-unifikasi" role="tabpanel"
+                    aria-labelledby="pills-bupot-unifikasi-tab">
+                    <div class="row mt-5 pricing testimonials mentors" id="reviews">
+                        <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                            <div class="item-pricing item-mentor position-relative">
+                                <div class="featured-course">
+                                    <img src="{{ asset('assets/img/thumb_bupot.png') }}" class="cover img-fluid"
+                                        alt="...">
+                                </div>
+                                <h2 class="name mt-4 line-clamp text-capitalize">
+                                    Bukti Potong PPh Unifikasi
                                     <a href="{{ route('bupot-pph-unifikasi.index') }}" class="stretched-link">
                                     </a>
                                 </h2>
                                 <p class="role mb-0 d-lg-block d-none">
                                     Pajak Penghasilan
                                 </p>
-                                <div class="item-two-row d-flex align-items-center mt-4">
-                                    <img src="https://class.buildwithangga.com/themes/front/images/ic_check.svg"
-                                        class="icon">
-                                    <p class="text-medium mb-0">
-                                        Selengkapnya
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +109,7 @@
                                 Hubungkan aplikasi melalui
                                 Telegram.
                             </p>
-                            <a href="https://web.telegram.org/k/" class="btn btn-primary btn-block">Buka Telegram</a>
+                            <a href="https://t.me/PojokPajakRsjdBot" class="btn btn-primary btn-block">Buka Telegram</a>
                         </div>
                     </div>
                 </div>

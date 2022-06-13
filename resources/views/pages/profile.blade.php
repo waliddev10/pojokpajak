@@ -18,7 +18,7 @@
                 <form id="login" action="https://class.buildwithangga.com/save_profile?" method="POST"
                     enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="cCp6NL51bvbzI31fHVigMzPSDRstErHjjB1RQxPs">
-                    <div class="mb-3 user-photo-upload">
+                    {{-- <div class="mb-3 user-photo-upload">
                         <h3 class="title">
                             Foto Profil
                         </h3>
@@ -34,7 +34,7 @@
                             </div>
                             <div class="clear"></div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
                         <input name="name" value="{{ Auth::user()->nama }}" type="text" disabled=""
@@ -61,7 +61,7 @@
                             class="oh-disabled  form-control" id="exampleInputPassword1">
                         <small class="form-text text-muted d-none text-red"></small>
                     </div>
-                    <button type="submit" class="w-100 mt-2 btn btn-primary btn-lg">Ubah Profil</button>
+                    {{-- <button type="submit" class="w-100 mt-2 btn btn-primary btn-lg">Ubah Profil</button> --}}
                 </form>
             </div>
         </div>

@@ -5315,3 +5315,89 @@ body.dark .quiz-option-item:hover {
         width: 25px !important;
     }
 }
+
+/* Custom */
+
+.tabs-content-nd-secondary {
+    min-height: 400px;
+}
+.tabs-content-nd-secondary .showcases .item-pricing {
+    margin-left: 0;
+}
+.tabs-content-nd-secondary .showcases .last-showcase {
+    margin-right: 10px !important;
+}
+.tabs-content-nd-secondary .showcases .last-showcase .role {
+    margin-top: 10px;
+}
+.tabs-content-nd-secondary .content .item-review {
+    padding: 30px;
+    background: #fff;
+    border-radius: 14px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.tabs-content-nd-secondary .content .item-review .photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+.tabs-content-nd-secondary .content .item-review .name {
+    color: #34364a;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.tabs-content-nd-secondary .content .item-review .role {
+    font-weight: 300;
+    font-size: 16px;
+    color: #999aa4;
+    margin-top: 4px;
+}
+.tabs-content-nd-secondary .content .item-review .item-pricing {
+    margin-bottom: 50px;
+}
+.tabs-content-nd-secondary .content .item-review .review {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.tabs-content-nd-secondary .content .gallery .item {
+    background: #fff;
+    border-radius: 16px;
+}
+.tabs-content-nd-secondary .content .gallery .item .cover {
+    border-radius: 16px;
+}
+.tabs-content-nd-secondary .content .title-section {
+    color: #34364a;
+    font-weight: 700;
+    font-size: 22px;
+}
+.tabs-content-nd-secondary .content .subtitle-section {
+    margin-top: -10px !important;
+    font-size: 16px;
+    color: #34364a;
+    font-weight: 400;
+}
+.tabs-content-nd-secondary .content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.tabs-content-nd-secondary .nav-item {
+    padding-right: 5px;
+}
+.tabs-content-nd-secondary button.tab {
+    background: #e5e9f2 !important;
+    color: #34364a !important;
+    border-radius: 100px !important;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tabs-content-nd-secondary button.active {
+    background: #34364a !important;
+    color: #fff !important;
+    font-weight: 500;
+}

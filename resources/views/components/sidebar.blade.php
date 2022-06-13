@@ -22,7 +22,7 @@
                     </a>
                 </p>
             </div>
-            <div class="item">
+            {{-- <div class="item">
                 <i data-feather="file-text"
                     class="icon @if(Request::is(URL::route('bupot-pph21-final.index', [], false).'/*')) text-primary @endif"></i>
                 <p>
@@ -30,7 +30,7 @@
                         Bukti Potong
                     </a>
                 </p>
-            </div>
+            </div> --}}
             <div class="item">
                 <i data-feather="settings"
                     class="icon @if(Request::is(URL::route('setting.index', [], false).'/*')) text-primary @endif"></i>

@@ -28,6 +28,8 @@ class BupotPph21FinalController extends Controller
                 ->when($request->has('tahun'), function ($query) use ($request) {
                     return $query->where('tahun_pajak', $request->tahun);
                 })
+                ->where('kode_objek_pajak', '21-402-01') //kode pajak final
+                ->where('pasal', 'PPH21') //kode pasal djponline
                 ->where('status', 'Normal')
                 ->orderBy('masa_pajak', 'asc')
                 ->orderBy('no_bukti', 'asc')

@@ -108,7 +108,7 @@
                         </ul>
                     </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ asset('panduan/pamflet_pojok_pajak_1.pdf') }}">
+                        <a class="nav-link" target="_blank" href="{{ asset('panduan/pamflet_pojok_pajak_2.pdf') }}">
                             Buku Panduan
                             <span class="ms-2 badge bg-primary">New</span>
                         </a>
@@ -362,8 +362,8 @@
             <div class="mb-5 row">
                 <div class="text-center col-lg-12 col-12">
                     <div class="front-text-group">
-                        <p class="text-support text-green">Statistik</p>
-                        <h2 class="header-primary mb-0">Performa Website
+                        <p class="text-support text-green">Laporan</p>
+                        <h2 class="header-primary mb-0">Statistik Website
                         </h2>
                         <p class="capt"></p>
                     </div>
@@ -377,7 +377,7 @@
                             <p>Jumlah Dokumen</p>
                         </div>
                         <div class="text-center col-6 col-md-3">
-                            <h3 class="text-green fw-bold">{{ number_format($bupot_count,0,',','.'); }}</h3>
+                            <h3 class="text-green fw-bold">4</h3>
                             <p>Video Tutorial</p>
                         </div>
                         <div class="text-center col-6 col-md-3">

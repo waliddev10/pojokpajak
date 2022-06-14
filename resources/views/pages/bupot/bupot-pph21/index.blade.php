@@ -100,7 +100,7 @@
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th colspan="7" style="text-align:right">Total</th>
+                                                <th colspan="4" style="text-align:right">Total</th>
                                                 <th></th>
                                             </tr>
                                         </tfoot>
@@ -237,12 +237,12 @@
                         return typeof i === 'string' ? i.replace(/[\$,]/g, '') * 1 : typeof i === 'number' ? i : 0;
                     };
                     pageTotal = api
-                        .column(7, { page: 'current' })
+                        .column(4, { page: 'current' })
                         .data()
                         .reduce(function (a, b) {
                             return intVal(a) + intVal(b);
                         }, 0);
-                    $(api.column(7).footer()).html(pageTotal);
+                    $(api.column(4).footer()).html(pageTotal);
                 }
             },
         });

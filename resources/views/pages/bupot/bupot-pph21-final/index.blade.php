@@ -98,6 +98,12 @@
                                         </thead>
                                         <tbody>
                                         </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th colspan="7" style="text-align:right">Total</th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
                                     </table>
                                 </div>
                             </div>
@@ -223,7 +229,23 @@
             },
             "order": [
                 [0, "desc"],
-            ]
+            ],
+            "pageLength": 100,
+            "footerCallback": function (row, data, start, end, display) {
+                var api = this.api();
+                if(row) {
+                    var intVal = function (i) {
+                        return typeof i === 'string' ? i.replace(/[\$,]/g, '') * 1 : typeof i === 'number' ? i : 0;
+                    };
+                    pageTotal = api
+                        .column(7, { page: 'current' })
+                        .data()
+                        .reduce(function (a, b) {
+                            return intVal(a) + intVal(b);
+                        }, 0);
+                    $(api.column(7).footer()).html(pageTotal);
+                }
+            },
         });
         $('#search-form').on('submit', function(e) {
             tableDokumen.draw();

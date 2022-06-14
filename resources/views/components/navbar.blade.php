@@ -29,7 +29,8 @@
                         </span>
                         <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="user-photo" src="{{ asset('assets/img/profile.webp') }}" alt="Walid">
+                            <img class="user-photo" src="{{ asset('assets/img/user.png') }}"
+                                alt="{{ Auth::user()->nama }}">
                         </a>
                         <ul class="mt-2 dropdown-menu dropdown-nd" aria-labelledby="dropdownMenuLink">
                             <li><a class="dropdown-item" href="{{  route('profile.index') }}">Profil Saya</a>

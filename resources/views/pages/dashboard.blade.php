@@ -99,8 +99,14 @@
                                     </a>
                                 </h2>
                                 <p class="role mb-0 d-lg-block d-none">
-                                    Pajak Penghasilan
+                                    PPh Pasal 4 ayat (2), 15, 22, 23
                                 </p>
+                                <div class="item-two-row d-flex align-items-center mt-4">
+                                    <i data-feather="clipboard" class="icon text-success"></i>
+                                    <p class="text-medium mb-0">
+                                        {{ $bupotPphUnifCount }} Dokumen
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

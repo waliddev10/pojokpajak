@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Ramsey\Uuid\Uuid;
@@ -16,22 +17,30 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // $table->string('id', 36)->primary();
-        // $table->string('nama');
-        // $table->string('email')->unique();
         // $table->string('npwp')->unique();
-        // $table->timestamp('email_verified_at')->nullable();
+        // $table->string('nama');
         // $table->string('password');
+        // $table->timestamp('email_verified_at')->nullable();
+        // $table->string('email')->nullable();
+        // $table->string('no_whatsapp')->nullable();
+        // $table->string('id_telegram')->nullable();
+        // $table->enum('jenis_wp', ['Orang Pribadi', 'Badan'])->default('Orang Pribadi');
         // $table->enum('role', ['admin', 'user']);
-        // $table->rememberToken();
-        // $table->timestamps();
+
         return User::create([
             'id' => Uuid::uuid4(),
-            'nama' => 'Moh. Walid Arkham Sani',
-            'email' => 'admin@gmail.com',
             'npwp' => '435126313627000',
+            'nama' => 'Moh. Walid Arkham Sani',
             'password' => Hash::make('@dmin'),
-            'role' => 'admin'
+            'email_verified_at' => Carbon::now()->format('Y-m-d'),
+            'email' => 'admin@gmail.com',
+            'no_whatsapp' => '085157626557',
+            'id_telegram' => '761858009',
+            'jenis_wp' => 'Orang Pribadi',
+            'role' => 'admin',
+            'notif_email' => true,
+            'notif_telegram' => true,
+            'notif_whatsapp' => true,
         ]);
     }
 }

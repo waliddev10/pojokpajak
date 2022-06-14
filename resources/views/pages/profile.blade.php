@@ -18,23 +18,6 @@
                 <form id="login" action="https://class.buildwithangga.com/save_profile?" method="POST"
                     enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="cCp6NL51bvbzI31fHVigMzPSDRstErHjjB1RQxPs">
-                    {{-- <div class="mb-3 user-photo-upload">
-                        <h3 class="title">
-                            Foto Profil
-                        </h3>
-                        <img id="avatar-src" src="{{ asset('assets/img/profile.webp') }}" class="me-3 avatar my-3"
-                            style="object-fit: cover">
-                        <div class="user-info">
-                            <div class="upload">
-                                <input type="file" name="avatar" id="avatar" class="file_upload avatar-image"
-                                    accept="image/jpg, image/jpeg, image/png">
-                                <div id="imageHelp" class="form-text mb-2">Format file jpg, jpeg, png. untuk ubah foto
-                                </div>
-                                <small class="form-text text-red text-muted d-none"></small>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div> --}}
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
                         <input name="name" value="{{ Auth::user()->nama }}" type="text" disabled=""
@@ -56,9 +39,22 @@
                         <small id="emailHelp_2" class="form-text text-muted d-none"></small>
                     </div>
                     <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Jenis Wajib Pajak</label>
+                        <input name="name" value="{{ Str::ucfirst(Auth::user()->jenis_wp) }}" type="text" disabled=""
+                            class="oh-disabled  form-control" id="exampleInputPassword1">
+                        <small class="form-text text-muted d-none text-red"></small>
+                    </div>
+                    <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Role</label>
                         <input name="name" value="{{ Str::ucfirst(Auth::user()->role) }}" type="text" disabled=""
                             class="oh-disabled  form-control" id="exampleInputPassword1">
+                        <small class="form-text text-muted d-none text-red"></small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Tanggal Terdaftar</label>
+                        <input name="name"
+                            value="{{ \Carbon\Carbon::parse(Auth::user()->created_at)->isoFormat('dddd, D MMMM YYYY') }}"
+                            type="text" disabled="" class="oh-disabled  form-control" id="exampleInputPassword1">
                         <small class="form-text text-muted d-none text-red"></small>
                     </div>
                     {{-- <button type="submit" class="w-100 mt-2 btn btn-primary btn-lg">Ubah Profil</button> --}}

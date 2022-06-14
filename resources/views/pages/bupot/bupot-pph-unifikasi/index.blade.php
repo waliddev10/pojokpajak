@@ -5,11 +5,11 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="header-primary mb-3">
-                Bupot PPh Unifikasi
+                Bukti Potong PPh Unifikasi
             </h1>
-            {{-- <p class="subtitle-primary">
-                Pajak Penghasilan Pasal 21
-            </p> --}}
+            <p class="subtitle-primary">
+                Pajak Penghasilan Pasal 4 ayat (2), 15, 22, 23
+            </p>
         </div>
     </div>
     <div class="row basic-form mt-4">
@@ -73,7 +73,7 @@
                                 <th class="text-center">Masa Pajak</th>
                                 <th class="text-center">Tanggal</th>
                                 <th class="text-center">No. Bukti Potong</th>
-                                <th class="text-center">Tarif Pajak</th>
+                                <th class="text-center">Pasal</th>
                                 <th class="text-center">Penghasilan Bruto</th>
                                 <th class="text-center">Pajak Dipotong</th>
                             </tr>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\BupotPph21;
+use App\Models\BupotPphunif;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,12 +27,16 @@ class DashboardController extends Controller
             ->where('pasal', 'PPH21') //kode pasal djponline
             ->where('status', 'Normal')
             ->count();
+        $bupotPphUnifCount = BupotPphunif::where('identitas_penerima_penghasilan', Auth::user()->npwp)
+            ->where('status', 'Normal')
+            ->count();
 
         return view(
             'pages.dashboard',
             compact(
                 'bupotPph21BulananCount',
                 'bupotPph21FinalCount',
+                'bupotPphUnifCount',
             )
         );
     }

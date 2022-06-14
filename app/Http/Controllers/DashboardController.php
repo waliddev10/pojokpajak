@@ -16,17 +16,22 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $bupot = BupotPph21::where('identitas_penerima_penghasilan', Auth::user()->npwp)->get();
-        $bupot_count = $bupot->count();
-        $bupot_sum_pph_dipotong = $bupot->sum('pph_dipotong');
-        $bupot_sum_penghasilan_bruto = $bupot->sum('penghasilan_bruto');
+        $bupotPph21BulananCount = BupotPph21::where('identitas_penerima_penghasilan', Auth::user()->npwp)
+            ->where('kode_objek_pajak', '21-100-01') //kode pajak bulanan
+            ->where('pasal', 'PPH21') //kode pasal djponline
+            ->where('status', 'Normal')
+            ->count();
+        $bupotPph21FinalCount = BupotPph21::where('identitas_penerima_penghasilan', Auth::user()->npwp)
+            ->where('kode_objek_pajak', '21-402-01') //kode pajak final
+            ->where('pasal', 'PPH21') //kode pasal djponline
+            ->where('status', 'Normal')
+            ->count();
 
         return view(
             'pages.dashboard',
             compact(
-                'bupot_count',
-                'bupot_sum_pph_dipotong',
-                'bupot_sum_penghasilan_bruto'
+                'bupotPph21BulananCount',
+                'bupotPph21FinalCount',
             )
         );
     }

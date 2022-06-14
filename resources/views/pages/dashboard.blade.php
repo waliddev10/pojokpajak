@@ -52,19 +52,18 @@
                                 <p class="role mb-0 d-lg-block d-none">
                                     PPh Pasal 21 Tidak Final
                                 </p>
-                                {{-- <div class="item-two-row d-flex align-items-center mt-4">
-                                    <img src="https://class.buildwithangga.com/themes/front/images/ic_check.svg"
-                                        class="icon">
+                                <div class="item-two-row d-flex align-items-center mt-4">
+                                    <i data-feather="clipboard" class="icon text-success"></i>
                                     <p class="text-medium mb-0">
-                                        Selengkapnya
+                                        {{ $bupotPph21BulananCount }} Dokumen
                                     </p>
-                                </div> --}}
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-12 mb-3">
                             <div class="item-pricing item-mentor position-relative">
                                 <div class="featured-course">
-                                    <img src="{{ asset('assets/img/thumb_bupot.png') }}" class="cover img-fluid"
+                                    <img src="{{ asset('assets/img/thumb_bupot_final.png') }}" class="cover img-fluid"
                                         alt="...">
                                 </div>
                                 <h2 class="name mt-4 line-clamp text-capitalize">
@@ -75,6 +74,12 @@
                                 <p class="role mb-0 d-lg-block d-none">
                                     PPh Pasal 21 Final
                                 </p>
+                                <div class="item-two-row d-flex align-items-center mt-4">
+                                    <i data-feather="clipboard" class="icon text-success"></i>
+                                    <p class="text-medium mb-0">
+                                        {{ $bupotPph21FinalCount }} Dokumen
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,8 +90,8 @@
                         <div class="col-lg-4 col-sm-6 col-12 mb-3">
                             <div class="item-pricing item-mentor position-relative">
                                 <div class="featured-course">
-                                    <img src="{{ asset('assets/img/thumb_bupot.png') }}" class="cover img-fluid"
-                                        alt="...">
+                                    <img src="{{ asset('assets/img/thumb_bupot_unifikasi.png') }}"
+                                        class="cover img-fluid" alt="...">
                                 </div>
                                 <h2 class="name mt-4 line-clamp text-capitalize">
                                     Bukti Potong PPh Unifikasi

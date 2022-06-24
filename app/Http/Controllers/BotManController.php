@@ -31,7 +31,7 @@ class BotManController extends Controller
         $botman->hears('/start|start|mulai', function (BotMan $bot) {
             $dataTelegram = $bot->getUser();
 
-            $user = User::where('telegram_id', $dataTelegram->getId())->first();
+            $user = User::where('id_telegram', $dataTelegram->getId())->first();
 
             // jika belum terdaftar
 
@@ -100,7 +100,7 @@ Ada yang bisa PopaBot bantu, ' . $sapaan . '?
         $users = User::all();
 
         foreach ($users as $user) {
-            $botman->say($request->message, $user->telegram_id, TelegramDriver::class);
+            $botman->say($request->message, $user->id_telegram, TelegramDriver::class);
         }
 
         return response()->json('sukses');

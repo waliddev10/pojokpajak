@@ -39,7 +39,7 @@ class BotManController extends Controller
                 $message =
                     'Selamat datang, Bapak/Ibu ***' . $dataTelegram->getFirstName() . '***!
 
-Terima kasih telah menghubungi Bot ***PopaBOT*** ___(Sistem Informasi Perpajakan)___.
+Terima kasih telah menghubungi Bot ___(Sistem Informasi Perpajakan)___.
 Ini adalah kanal layanan informasi perbendaharaan seputar perpajakan melalui Telegram yang akan melayani Bapak/Ibu selama 7x24 jam.
 
 ----------------------------------------

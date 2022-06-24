@@ -58,18 +58,14 @@ Untuk melanjutkan layanan ini secara penuh, harap segera melengkapi informasi Ba
             } else {
                 // jika sudah terdaftar
 
-                $sapaan = $user->jenis_kelamin == 'Laki-laki' ? 'Bapak' : 'Ibu';
-
-                $bot->reply('Selamat datang kembali, ' . $sapaan . ' ***' . $user->nama . '***!
+                $bot->reply('Selamat datang kembali, ***' . $user->nama . '***!
 
 ----------------------------------------
-Data Telegram ' . $sapaan . ':
 ID Telegram  :  ***' . $dataTelegram->getId() . '***
 Username     :  @' . $dataTelegram->getUsername() . '
 ----------------------------------------
 
-Ada yang bisa PopaBot bantu, ' . $sapaan . '?
-', ['parse_mode' => 'Markdown']);
+Ada yang bisa PopaBot bantu?', ['parse_mode' => 'Markdown']);
                 $bot->startConversation(new WelcomeConversation());
             }
         })->stopsConversation();

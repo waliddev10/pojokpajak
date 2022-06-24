@@ -98,7 +98,7 @@ class RegisterConversation extends Conversation
             $this->nipPNS = $answer->getText();
             $this->say('Baik.');
             $this->say('Berikut biodata sesuai dengan yang ' . $this->sapaan . ' isikan:
-            
+
 Nama Lengkap   : ' . $this->namaLengkap . '
 Jenis Kelamin  : ' . $this->jenisKelamin . '
 Status     : ' . $this->namaStatusPegawai . '

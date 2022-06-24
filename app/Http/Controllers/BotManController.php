@@ -29,24 +29,11 @@ class BotManController extends Controller
         ]], new LaravelCache());
 
         $botman->hears('/start|start|mulai', function (BotMan $bot) {
-            $dataTelegram = $bot->getUser();
-
-            $user = User::where('id_telegram', $dataTelegram->getId())->first();
-
-            // jika belum terdaftar
-
-            if (empty($user) || !$user) {
                 $message =
-                    'Selamat datang, Bapak/Ibu ***' . $dataTelegram->getFirstName() . '***!
+                    'Selamat datang!
 
 Terima kasih telah menghubungi Bot ___(Sistem Informasi Perpajakan)___.
 Ini adalah kanal layanan informasi perbendaharaan seputar perpajakan melalui Telegram yang akan melayani Bapak/Ibu selama 7x24 jam.
-
-----------------------------------------
-Data Telegram Bapak/Ibu:
-ID Telegram  :  ***' . $dataTelegram->getId() . '***
-Username     :  @' . $dataTelegram->getUsername() . '
-----------------------------------------
 
 Untuk melanjutkan layanan ini secara penuh, harap segera melengkapi informasi Bapak/Ibu berikut ini.
 ';
@@ -54,20 +41,7 @@ Untuk melanjutkan layanan ini secara penuh, harap segera melengkapi informasi Ba
                 $bot->reply($message, [
                     'parse_mode' => 'Markdown'
                 ]);
-                $bot->startConversation(new RegisterConversation());
-            } else {
-                // jika sudah terdaftar
-
-                $bot->reply('Selamat datang kembali, ***' . $user->nama . '***!
-
-----------------------------------------
-ID Telegram  :  ***' . $dataTelegram->getId() . '***
-Username     :  @' . $dataTelegram->getUsername() . '
-----------------------------------------
-
-Ada yang bisa PopaBot bantu?', ['parse_mode' => 'Markdown']);
-                $bot->startConversation(new WelcomeConversation());
-            }
+                // $bot->startConversation(new RegisterConversation());
         })->stopsConversation();
 
         $botman->hears('/kitab|kitab', function (BotMan $bot) {

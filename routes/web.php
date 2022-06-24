@@ -50,10 +50,12 @@ Route::middleware(['auth'])->group(function () {
     });
 });
 
-Route::get('/migrate', function () {
+Route::get('/migrate/fresh', function () {
     return Artisan::call('migrate:fresh');
 });
-
+Route::get('/migrate', function () {
+    return Artisan::call('migrate');
+});
 Route::get('/seed', function () {
     return Artisan::call('db:seed');
 });

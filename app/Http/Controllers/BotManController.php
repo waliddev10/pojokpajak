@@ -37,10 +37,10 @@ class BotManController extends Controller
 
             if (empty($user) || !$user) {
                 $message =
-                    'Selamat datang, Bapak/Ibu ***' . $dataTelegram->getFirstName() . '***! 
+                    'Selamat datang, Bapak/Ibu ***' . $dataTelegram->getFirstName() . '***!
 
-Terima kasih telah menghubungi Bot ***SiBENDI*** ___(Sistem Informasi Perbendaharaan RSJD Atma Husada Mahakam)___.
-Ini adalah kanal layanan informasi perbendaharaan seputar gaji dan perpajakan melalui Telegram yang akan melayani Bapak/Ibu selama 7x24 jam.
+Terima kasih telah menghubungi Bot ***PopaBOT*** ___(Sistem Informasi Perpajakan)___.
+Ini adalah kanal layanan informasi perbendaharaan seputar perpajakan melalui Telegram yang akan melayani Bapak/Ibu selama 7x24 jam.
 
 ----------------------------------------
 Data Telegram Bapak/Ibu:
@@ -68,7 +68,7 @@ ID Telegram  :  ***' . $dataTelegram->getId() . '***
 Username     :  @' . $dataTelegram->getUsername() . '
 ----------------------------------------
 
-Ada yang bisa SiBENDI bantu, ' . $sapaan . '?
+Ada yang bisa PopaBot bantu, ' . $sapaan . '?
 ', ['parse_mode' => 'Markdown']);
                 $bot->startConversation(new WelcomeConversation());
             }

@@ -33,80 +33,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="basic-menus navbar-nav me-auto mb-2 mb-lg-0">
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="/about">
-                            Tentang Kami
-                        </a>
-                    </li> --}}
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Tutorial
-                        </a>
-                        <ul class="dropdown-menu mega-menu-nd" aria-labelledby="navbarDropdown">
-                            <div class="row">
-                                <div class="col-lg-6 col-12">
-                                    <li class="item-menu">
-                                        <a class="dropdown-item" href="/catalog/design-courses">
-                                            <img src="{{ asset('assets/img/ic_design.svg') }}" class="icon">
-                                            <p class="title">
-                                                Membuat NPWP
-                                            </p>
-                                            <p class="subtitle">
-                                                Pembuatan secara online
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="item-menu">
-                                        <a class="dropdown-item" href="/catalog/code-courses">
-                                            <img src="{{ asset('assets/img/ic_appcode.svg') }}" class="icon">
-                                            <p class="title">
-                                                Pelaporan SPT
-                                            </p>
-                                            <p class="subtitle">
-                                                Bagi Wajib Pajak
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="item-menu">
-                                        <a class="dropdown-item" href="/catalog/softskills-courses">
-                                            <img src="{{ asset('assets/img/ic_softskills.svg') }}" class="icon">
-                                            <p class="title">
-                                                Pembuatan Faktur Pajak
-                                            </p>
-                                            <p class="subtitle">
-                                                Bagi Wajib Pajak Rekanan
-                                            </p>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class="col-lg-6 col-12 right">
-                                    <li class="item-menu">
-                                        <a class="dropdown-item" href="/kelas">
-                                            <img src="{{ asset('assets/img/ic_all_course.svg') }}" class="icon">
-                                            <p class="title">
-                                                Penggunaan E-Bupot
-                                            </p>
-                                            <p class="subtitle">
-                                                Bendahara Instansi Pemerintah
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="item-menu">
-                                        <a class="dropdown-item" href="/journey">
-                                            <img src="{{ asset('assets/img/ic_flag.svg') }}" class="icon">
-                                            <p class="title">
-                                                Pembuatan Billing Pajak
-                                            </p>
-                                            <p class="subtitle">
-                                                Setiap melakukan transaksi pajak
-                                            </p>
-                                        </a>
-                                    </li>
-                                </div>
-                            </div>
-                        </ul>
-                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="{{ asset('panduan/pamflet_pojok_pajak_2.pdf') }}">
                             Buku Panduan
@@ -116,7 +42,7 @@
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-3 wrap-btn-daftar">
-                        <button class="btn btn-secondary btn-daftar d-none d-lg-block">Masuk</button>
+                        <button class="btn btn-primary btn-daftar d-block">Masuk</button>
                     </li>
                 </ul>
             </div>
@@ -147,10 +73,6 @@
                                     <label for="password" class="form-label">Password</label>
                                     <input name="password" type="password" class="form-control" id="password" required>
                                 </div>
-                                {{-- <p class="flr">
-                                    <a href="https://class.buildwithangga.com/password/reset" class="text-link">Lupa
-                                        Password</a>
-                                </p> --}}
                                 <div class="mb-2">
                                     <input class="d-inline" type="checkbox" name="remember" id="remember">
                                     <label class="d-inline" for="remember">Ingat saya</label>
@@ -172,12 +94,9 @@
                     <p class="my-4 subtitle">
                         Sistem Informasi Perpajakan di lingkungan Rumah Sakit Jiwa Daerah Atma Husada Mahakam</p>
                     <p>
-                        <button class="btn btn-primary btn-daftar me-3" href="{{ route('login') }}">
-                            <img class="text-white" height="25" width="25"
-                                src="{{ asset('assets/img/icon_login.svg') }}" /> Akses
-                            Informasi
-                        </button>
+                        <object style="width:150px;" type="image/svg+xml" data="{{ asset('assets/img/digicert.svg') }}"></object>
                     </p>
+
                 </div>
                 <div class="col-lg-6 text-end col-12 d-none d-sm-block mt-md-5 mt-lg-0">
                     <div class="carousel slide">
